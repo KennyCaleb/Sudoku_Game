@@ -50,8 +50,8 @@ body {
 
 #sudoku-container {
     display: grid;
-    grid-template-columns: repeat(9, 40px);
-    grid-template-rows: repeat(9, 40px);
+    grid-template-columns: repeat(9, clamp(25px, 3vw, 40px));
+    grid-template-rows: repeat(9, clamp(25px, 3vw, 40px));
     gap: 1px;
     border: 2px solid #000;
     animation: spin 2s ease-in-out;
